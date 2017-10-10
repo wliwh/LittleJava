@@ -38,7 +38,7 @@ class ManhattanPt extends PointD {
 }
 
 abstract class NumD {
-    }
+}
 
 class Zero extends NumD {
     }
