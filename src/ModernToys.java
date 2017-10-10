@@ -37,21 +37,19 @@ class ManhattanPt extends PointD {
     }
 }
 
-class Nums {
-    abstract class NumD {
+abstract class NumD {
     }
 
-    class Zero extends NumD {
+class Zero extends NumD {
     }
 
-    class OneMoreThan extends NumD {
+class OneMoreThan extends NumD {
         NumD predecessor;
 
         OneMoreThan(NumD _d) {
             predecessor = _d;
         }
     }
-}
 
 abstract class ShishD {
     abstract boolean onlyOnions();
