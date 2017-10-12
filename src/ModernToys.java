@@ -41,7 +41,7 @@ abstract class NumD {
 }
 
 class Zero extends NumD {
-    }
+}
 
 class OneMoreThan extends NumD {
         NumD predecessor;
@@ -50,63 +50,6 @@ class OneMoreThan extends NumD {
             predecessor = _d;
         }
     }
-
-abstract class ShishD {
-    abstract boolean onlyOnions();
-
-    abstract boolean isVegetarian();
-}
-
-class Skewer extends ShishD {
-
-    @Override
-    boolean onlyOnions() {
-        return true;
-    }
-
-    @Override
-    boolean isVegetarian() {
-        return true;
-    }
-}
-
-class Onion extends ShishD {
-
-    ShishD s;
-
-    Onion(ShishD _s) {
-        s = _s;
-    }
-
-    @Override
-    boolean onlyOnions() {
-        return s.onlyOnions();
-    }
-
-    @Override
-    boolean isVegetarian() {
-        return s.isVegetarian();
-    }
-}
-
-class Lamb extends ShishD {
-
-    ShishD s;
-
-    Lamb(ShishD _s) {
-        s = _s;
-    }
-
-    @Override
-    boolean onlyOnions() {
-        return false;
-    }
-
-    @Override
-    boolean isVegetarian() {
-        return false;
-    }
-}
 
 public class ModernToys {
 
